@@ -1,0 +1,771 @@
+{
+  "auth": {
+    "bearer": [
+      {
+        "key": "token",
+        "type": "string",
+        "value": "{{auth_secret_17ce}}"
+      }
+    ],
+    "type": "bearer"
+  },
+  "info": {
+    "_collection_link": "https://go.postman.co/collection/58465280-507279fe-48cd-46d9-bd3b-79225764f83e?source=collection_link",
+    "_exporter_id": "58465280",
+    "_postman_id": "507279fe-48cd-46d9-bd3b-79225764f83e",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "name": "Marketo API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Leads",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "host": [
+            "717-ICG-368",
+            "mktorest",
+            "com"
+          ],
+          "path": [
+            "identity",
+            "oauth",
+            "token"
+          ],
+          "protocol": "https",
+          "query": [
+            {
+              "key": "grant_type",
+              "value": "client_credentials"
+            },
+            {
+              "key": "client_id",
+              "value": "97bae89b-4978-4718-b57a-b9148a46c464"
+            },
+            {
+              "key": "client_secret",
+              "value": "Gf8b6g1zAJNKbZ0BWRd064JhdCa9VkOh"
+            }
+          ],
+          "raw": "https://717-ICG-368.mktorest.com/identity/oauth/token?grant_type=client_credentials&client_id=97bae89b-4978-4718-b57a-b9148a46c464&client_secret=Gf8b6g1zAJNKbZ0BWRd064JhdCa9VkOh"
+        }
+      },
+      "response": [
+        {
+          "_postman_previewlanguage": "json",
+          "body": "{\n  \"access_token\": \"cae4ecba-daa4-4309-9a73-3cbcad0f67c5:sj\",\n  \"token_type\": \"bearer\",\n  \"expires_in\": 3305,\n  \"scope\": \"arpit.dave@ltm.com\"\n}",
+          "code": 200,
+          "cookie": [],
+          "header": [
+            {
+              "key": "date",
+              "value": "Thu, 24 Sep 2026 11:20:55 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "server",
+              "value": "nginx"
+            },
+            {
+              "key": "cache-control",
+              "value": "no-store"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/1.1 m_proxy_prod_aws_ap-south-2_1_1n, HTTP/1.1 s_proxy_prod_aws_ap-south-2_1_1n"
+            }
+          ],
+          "name": "Auth API",
+          "originalRequest": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "717-ICG-368",
+                "mktorest",
+                "com"
+              ],
+              "path": [
+                "identity",
+                "oauth",
+                "token"
+              ],
+              "protocol": "https",
+              "query": [
+                {
+                  "key": "grant_type",
+                  "value": "client_credentials"
+                },
+                {
+                  "key": "client_id",
+                  "value": "97bae89b-4978-4718-b57a-b9148a46c464"
+                },
+                {
+                  "key": "client_secret",
+                  "value": "Gf8b6g1zAJNKbZ0BWRd064JhdCa9VkOh"
+                }
+              ],
+              "raw": "https://717-ICG-368.mktorest.com/identity/oauth/token?grant_type=client_credentials&client_id=97bae89b-4978-4718-b57a-b9148a46c464&client_secret=Gf8b6g1zAJNKbZ0BWRd064JhdCa9VkOh"
+            }
+          },
+          "status": "200"
+        },
+        {
+          "_postman_previewlanguage": "json",
+          "body": "{\n  \"access_token\": \"1b9de3db-7c65-490e-b0c1-6fb4b536e7fe:sj\",\n  \"token_type\": \"bearer\",\n  \"expires_in\": 3557,\n  \"scope\": \"arpit.dave@ltm.com\"\n}",
+          "code": 200,
+          "cookie": [],
+          "header": [
+            {
+              "key": "date",
+              "value": "Fri, 25 Sep 2026 08:02:23 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "server",
+              "value": "nginx"
+            },
+            {
+              "key": "cache-control",
+              "value": "no-store"
+            },
+            {
+              "key": "pragma",
+              "value": "no-cache"
+            },
+            {
+              "key": "x-xss-protection",
+              "value": "1; mode=block"
+            },
+            {
+              "key": "x-frame-options",
+              "value": "DENY"
+            },
+            {
+              "key": "x-content-type-options",
+              "value": "nosniff"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/1.1 m_proxy_prod_aws_ap-south-2_1_0n, HTTP/1.1 s_proxy_prod_aws_ap-south-2_1_0n"
+            }
+          ],
+          "name": "Get Leads",
+          "originalRequest": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "717-ICG-368",
+                "mktorest",
+                "com"
+              ],
+              "path": [
+                "identity",
+                "oauth",
+                "token"
+              ],
+              "protocol": "https",
+              "query": [
+                {
+                  "key": "grant_type",
+                  "value": "client_credentials"
+                },
+                {
+                  "key": "client_id",
+                  "value": "97bae89b-4978-4718-b57a-b9148a46c464"
+                },
+                {
+                  "key": "client_secret",
+                  "value": "Gf8b6g1zAJNKbZ0BWRd064JhdCa9VkOh"
+                }
+              ],
+              "raw": "https://717-ICG-368.mktorest.com/identity/oauth/token?grant_type=client_credentials&client_id=97bae89b-4978-4718-b57a-b9148a46c464&client_secret=Gf8b6g1zAJNKbZ0BWRd064JhdCa9VkOh"
+            }
+          },
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "exec": [
+              "{\r\n    \"action\": \"createOnly\",\r\n    \"input\": [\r\n        {\r\n            \"email\": \"apitest001@gmail.com\",\r\n            \"firstName\": \"API\",\r\n            \"lastName\": \"Test\"\r\n        }\r\n    ]\r\n}"
+            ],
+            "type": "text/javascript"
+          }
+        }
+      ],
+      "name": "POST",
+      "request": {
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\r\n  \"action\":\"createOrUpdate\",\r\n  \"lookupField\":\"id\",\r\n  \"input\":[\r\n    {\r\n      \"id\":\"5436\",\r\n      \"behaviorScore\":\"10\",\r\n      \"demographicscore\":\"20\"\r\n    }\r\n  ]\r\n}"
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "method": "GET",
+        "url": {
+          "host": [
+            "717-ICG-368",
+            "mktorest",
+            "com"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "leads.json"
+          ],
+          "port": "",
+          "protocol": "https",
+          "query": [
+            {
+              "key": "filterType",
+              "value": "email"
+            },
+            {
+              "key": "filterValues",
+              "value": "apitest001@gmail.com"
+            },
+            {
+              "key": "fields",
+              "value": "leadScore,behaviorScore,demographicScore"
+            }
+          ],
+          "raw": "https://717-ICG-368.mktorest.com:/rest/v1/leads.json?filterType=email&filterValues=apitest001@gmail.com&fields=leadScore,behaviorScore,demographicScore"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Lists",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "host": [
+            "717-ICG-368",
+            "mktorest",
+            "com"
+          ],
+          "path": [
+            "rest",
+            "asset",
+            "v1",
+            "programs.json"
+          ],
+          "protocol": "https",
+          "raw": "https://717-ICG-368.mktorest.com/rest/asset/v1/programs.json"
+        }
+      },
+      "response": [
+        {
+          "_postman_previewlanguage": "json",
+          "body": "{\n  \"requestId\": \"1851a#1a0d3536a62\",\n  \"result\": [\n    {\n      \"id\": 1001,\n      \"name\": \"test\",\n      \"programName\": \"Test for Demo\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-06-02T17:58:22Z\",\n      \"updatedAt\": \"2019-06-03T02:52:45Z\"\n    },\n    {\n      \"id\": 1003,\n      \"name\": \"Main Program.Sample_List\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-06-03T04:45:45Z\",\n      \"updatedAt\": \"2019-06-03T06:21:53Z\"\n    },\n    {\n      \"id\": 1004,\n      \"name\": \"BP-NL-YYYY-MM Newsletter v3.Vivek_test\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-06-04T04:48:32Z\",\n      \"updatedAt\": \"2019-06-04T04:49:56Z\"\n    },\n    {\n      \"id\": 1007,\n      \"name\": \"list name\",\n      \"programName\": \"test-1\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-02T05:50:49Z\",\n      \"updatedAt\": \"2020-09-14T06:37:57Z\"\n    },\n    {\n      \"id\": 1009,\n      \"name\": \"Subbu List\",\n      \"programName\": \"List Upload\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-23T14:01:07Z\",\n      \"updatedAt\": \"2019-07-23T14:15:36Z\"\n    },\n    {\n      \"id\": 1010,\n      \"name\": \"Test List\",\n      \"programName\": \"List\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-23T14:17:30Z\",\n      \"updatedAt\": \"2019-07-23T14:21:52Z\"\n    },\n    {\n      \"id\": 1011,\n      \"name\": \"My Tradeshow Attendees\",\n      \"programName\": \"My Tradeshow Program\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-25T10:17:08Z\",\n      \"updatedAt\": \"2019-07-25T10:27:52Z\"\n    },\n    {\n      \"id\": 1012,\n      \"name\": \"Subbu Ganesh Anith List\",\n      \"programName\": \"List Upload\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-25T11:50:20Z\",\n      \"updatedAt\": \"2019-08-06T09:20:07Z\"\n    },\n    {\n      \"id\": 1013,\n      \"name\": \"SubbuGaneshAnithList\",\n      \"programName\": \"Subramanyam Program\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-25T12:18:16Z\",\n      \"updatedAt\": \"2019-07-25T12:37:27Z\"\n    },\n    {\n      \"id\": 1014,\n      \"name\": \"Subbu List 2\",\n      \"programName\": \"List Upload\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-07-26T07:29:20Z\",\n      \"updatedAt\": \"2019-07-26T07:29:21Z\"\n    },\n    {\n      \"id\": 1015,\n      \"name\": \"Tradeshow Attendes\",\n      \"description\": \"List Import Quick Wins\",\n      \"programName\": \"List Import\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2019-08-01T09:10:29Z\",\n      \"updatedAt\": \"2019-08-01T09:17:33Z\"\n    },\n    {\n      \"id\": 1017,\n      \"name\": \"member of list\",\n      \"programName\": \"EM - Alert-email v1\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2020-04-23T04:57:56Z\",\n      \"updatedAt\": \"2020-04-23T04:59:16Z\"\n    },\n    {\n      \"id\": 1018,\n      \"name\": \"list\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2020-06-16T12:44:13Z\",\n      \"updatedAt\": \"2023-08-09T12:33:00Z\"\n    },\n    {\n      \"id\": 1020,\n      \"name\": \"My List\",\n      \"programName\": \"My First Campaign\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2020-06-19T05:36:24Z\",\n      \"updatedAt\": \"2020-06-19T05:36:26Z\"\n    },\n    {\n      \"id\": 1021,\n      \"name\": \"TestList_Hardbounce\",\n      \"programName\": \"Anith-AG1\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2020-06-19T10:47:50Z\",\n      \"updatedAt\": \"2020-06-19T10:50:45Z\"\n    },\n    {\n      \"id\": 1022,\n      \"name\": \"19 june\",\n      \"programName\": \"19 June\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2020-06-19T12:39:09Z\",\n      \"updatedAt\": \"2020-06-19T12:40:09Z\"\n    },\n    {\n      \"id\": 1024,\n      \"name\": \"Newsletter-List-SM\",\n      \"description\": \"Monthly Corporate Newsletter List\",\n      \"programName\": \"NL-2020-07-14-Important-News-01-SM\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2020-07-14T14:02:29Z\",\n      \"updatedAt\": \"2020-07-14T14:02:30Z\"\n    },\n    {\n      \"id\": 1025,\n      \"name\": \"Prospects-01-SM\",\n      \"description\": \"Existing prospects for nurture\",\n      \"programName\": \"NUR-2020-07-19-Prospects-01-SM\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2020-07-20T08:13:09Z\",\n      \"updatedAt\": \"2020-07-20T08:58:59Z\"\n    },\n    {\n      \"id\": 1027,\n      \"name\": \"Grow\",\n      \"programName\": \"Masonry Reinforcement Solutions-Murfor Compact E-70\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-01-12T06:57:07Z\",\n      \"updatedAt\": \"2021-01-12T11:09:33Z\"\n    },\n    {\n      \"id\": 1028,\n      \"name\": \"Grow\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-01-12T12:47:29Z\",\n      \"updatedAt\": \"2021-01-12T13:05:12Z\"\n    },\n    {\n      \"id\": 1029,\n      \"name\": \"Protect\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-01-12T12:47:46Z\",\n      \"updatedAt\": \"2021-01-12T13:28:01Z\"\n    },\n    {\n      \"id\": 1030,\n      \"name\": \"Nurture\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-01-12T12:48:13Z\",\n      \"updatedAt\": \"2021-01-12T13:27:59Z\"\n    },\n    {\n      \"id\": 1031,\n      \"name\": \"Invest\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-01-12T12:48:27Z\",\n      \"updatedAt\": \"2026-04-25T06:52:42Z\"\n    },\n    {\n      \"id\": 1032,\n      \"name\": \"TapasTest.Test-list\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-02-03T06:36:42Z\",\n      \"updatedAt\": \"2021-02-03T06:37:11Z\"\n    },\n    {\n      \"id\": 1033,\n      \"name\": \"test-list-2\",\n      \"programName\": \"Tapas-4\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2021-02-03T17:04:43Z\",\n      \"updatedAt\": \"2021-02-03T17:05:01Z\"\n    },\n    {\n      \"id\": 1036,\n      \"name\": \"List 1\",\n      \"programName\": \"Import data 3rd email\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-08T00:59:04Z\",\n      \"updatedAt\": \"2023-08-08T00:59:06Z\"\n    },\n    {\n      \"id\": 1037,\n      \"name\": \"ITWEEK2023\",\n      \"programName\": \"CA_EN_ITWEEK2023_Newsletter\",\n      \"workspaceId\": 12,\n      \"workspaceName\": \"ASEAN- Equipment\",\n      \"createdAt\": \"2023-08-08T05:54:55Z\",\n      \"updatedAt\": \"2023-08-08T05:54:56Z\"\n    },\n    {\n      \"id\": 1038,\n      \"name\": \"List01\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-09T12:26:11Z\",\n      \"updatedAt\": \"2023-08-09T12:45:14Z\"\n    },\n    {\n      \"id\": 1040,\n      \"name\": \"MAP.MAP 2\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-10T07:31:49Z\",\n      \"updatedAt\": \"2023-08-10T07:32:52Z\"\n    },\n    {\n      \"id\": 1041,\n      \"name\": \"MAP.MAP 1\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-10T07:45:43Z\",\n      \"updatedAt\": \"2023-08-10T09:57:27Z\"\n    },\n    {\n      \"id\": 1043,\n      \"name\": \"MAP.MAP1\",\n      \"programName\": \"Tasks\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-10T10:16:31Z\",\n      \"updatedAt\": \"2023-08-10T10:16:33Z\"\n    },\n    {\n      \"id\": 1044,\n      \"name\": \"MAP.MAP2\",\n      \"programName\": \"Tasks\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-10T10:19:45Z\",\n      \"updatedAt\": \"2023-08-10T10:19:47Z\"\n    },\n    {\n      \"id\": 1045,\n      \"name\": \"offline data\",\n      \"programName\": \"Test Email\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-11T03:03:09Z\",\n      \"updatedAt\": \"2023-08-11T05:22:29Z\"\n    },\n    {\n      \"id\": 1046,\n      \"name\": \"People with languages for segmentation purpose\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-11T05:01:16Z\",\n      \"updatedAt\": \"2023-08-11T05:23:56Z\"\n    },\n    {\n      \"id\": 1047,\n      \"name\": \"segmentation list for language\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-11T05:25:14Z\",\n      \"updatedAt\": \"2023-08-11T05:25:16Z\"\n    },\n    {\n      \"id\": 1048,\n      \"name\": \"Tradeshow attendes\",\n      \"programName\": \"My Trade show Program\",\n      \"workspaceId\": 2,\n      \"workspaceName\": \"Learning\",\n      \"createdAt\": \"2023-08-13T15:20:54Z\",\n      \"updatedAt\": \"2023-08-13T15:21:52Z\"\n    },\n    {\n      \"id\": 1052,\n      \"name\": \"Subscribed Contacts\",\n      \"programName\": \"Newsletter Subscription\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-08-25T07:29:08Z\",\n      \"updatedAt\": \"2023-08-25T08:30:57Z\"\n    },\n    {\n      \"id\": 1053,\n      \"name\": \"Double Opt-in Contacts\",\n      \"programName\": \"Newsletter Subscription\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-08-25T07:43:34Z\",\n      \"updatedAt\": \"2023-08-25T08:30:57Z\"\n    },\n    {\n      \"id\": 1054,\n      \"name\": \"Campaign Members\",\n      \"programName\": \"App Promotion\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-08-31T10:10:22Z\",\n      \"updatedAt\": \"2023-08-31T10:10:24Z\"\n    },\n    {\n      \"id\": 1055,\n      \"name\": \"Distributor Target List\",\n      \"description\": \"\",\n      \"programName\": \"Woodcoatings App Download\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-09-06T12:59:39Z\",\n      \"updatedAt\": \"2023-09-21T06:21:20Z\"\n    },\n    {\n      \"id\": 1056,\n      \"name\": \"Test List\",\n      \"programName\": \"Test Nurture\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-09-13T11:22:58Z\",\n      \"updatedAt\": \"2023-09-13T11:23:00Z\"\n    },\n    {\n      \"id\": 1057,\n      \"name\": \"On List\",\n      \"programName\": \"TS-FY23-Q3-09-Event Name\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-09-21T08:23:32Z\",\n      \"updatedAt\": \"2023-09-21T08:23:34Z\"\n    },\n    {\n      \"id\": 1058,\n      \"name\": \"Influenced\",\n      \"programName\": \"TS-FY23-Q3-09-Event Name\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-09-21T08:23:50Z\",\n      \"updatedAt\": \"2023-09-21T08:23:52Z\"\n    },\n    {\n      \"id\": 1059,\n      \"name\": \"Funnel Report\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2023-10-03T14:17:07Z\",\n      \"updatedAt\": \"2023-10-03T14:17:10Z\"\n    },\n    {\n      \"id\": 1060,\n      \"name\": \"List\",\n      \"programName\": \"My First Program\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2026-03-23T09:19:16Z\",\n      \"updatedAt\": \"2026-03-23T10:09:20Z\"\n    },\n    {\n      \"id\": 1061,\n      \"name\": \"my first list\",\n      \"programName\": \"Keshav Demo\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2026-04-23T15:46:46Z\",\n      \"updatedAt\": \"2026-04-24T13:47:49Z\"\n    },\n    {\n      \"id\": 1062,\n      \"name\": \"Static\",\n      \"description\": \"Banglore Data\",\n      \"programName\": \"Jaldi Limited\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2026-04-24T03:56:57Z\",\n      \"updatedAt\": \"2026-04-24T03:57:00Z\"\n    },\n    {\n      \"id\": 1066,\n      \"name\": \"Static List\",\n      \"programName\": \"Aryan Demo 1\",\n      \"workspaceId\": 1,\n      \"workspaceName\": \"Default\",\n      \"createdAt\": \"2026-04-25T04:20:53Z\",\n      \"updatedAt\": \"2026-04-25T04:20:56Z\"\n    }\n  ],\n  \"success\": true\n}",
+          "code": 200,
+          "cookie": [],
+          "header": [
+            {
+              "key": "date",
+              "value": "Thu, 24 Sep 2026 12:10:57 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "server",
+              "value": "nginx"
+            },
+            {
+              "key": "vary",
+              "value": "Accept-Encoding"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/1.1 m_proxy_prod_aws_ap-south-2_1_1n, HTTP/1.1 s_proxy_prod_aws_ap-south-2_1_1n"
+            }
+          ],
+          "name": "Get Lists",
+          "originalRequest": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "717-ICG-368",
+                "mktorest",
+                "com"
+              ],
+              "path": [
+                "rest",
+                "v1",
+                "lists.json"
+              ],
+              "protocol": "https",
+              "raw": "https://717-ICG-368.mktorest.com/rest/v1/lists.json"
+            }
+          },
+          "status": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Get Programs",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "_postman_previewlanguage": "json",
+          "body": "{\n  \"success\": true,\n  \"errors\": [],\n  \"requestId\": \"10f98#1a0d355f2cb\",\n  \"warnings\": [],\n  \"result\": [\n    {\n      \"id\": 1095,\n      \"name\": \"01-Demo-Email\",\n      \"description\": \"Promotional email driving to the Computer Model 100 demo-request page\",\n      \"createdAt\": \"2020-07-22T06:38:26Z+0000\",\n      \"updatedAt\": \"2020-07-22T06:38:43Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1095A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Email Send\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 309,\n        \"folderName\": \"Emails\"\n      },\n      \"status\": \"unlocked\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1092,\n      \"name\": \"01-Stream-04-Email\",\n      \"description\": \"Email promoting newly released e-book. Members with CEO job titles will receive exclusive VIP content while all other members will receive standard content.\",\n      \"createdAt\": \"2020-07-20T06:21:01Z+0000\",\n      \"updatedAt\": \"2020-07-20T06:21:15Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1092A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Nested Nurture Program\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 290,\n        \"folderName\": \"Assets\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1076,\n      \"name\": \"18 June\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-18T12:36:54Z+0000\",\n      \"updatedAt\": \"2020-06-18T12:43:12Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1076A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Email Blast\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1078,\n      \"name\": \"19 June\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-19T12:34:28Z+0000\",\n      \"updatedAt\": \"2020-06-19T12:34:28Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1078A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Web Content\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1080,\n      \"name\": \"22 June\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-22T12:37:59Z+0000\",\n      \"updatedAt\": \"2020-06-22T12:50:32Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#NP1080A1\",\n      \"type\": \"Engagement\",\n      \"channel\": \"Nurture\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"on\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1081,\n      \"name\": \"22 June-2\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-22T12:44:20Z+0000\",\n      \"updatedAt\": \"2020-06-22T12:44:20Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1081A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Newsletter\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"unlocked\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1083,\n      \"name\": \"23 June\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-23T12:36:51Z+0000\",\n      \"updatedAt\": \"2020-06-23T12:36:51Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#ME1083A1\",\n      \"type\": \"Event\",\n      \"channel\": \"Live Event\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1084,\n      \"name\": \"23 June-1\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-23T12:39:48Z+0000\",\n      \"updatedAt\": \"2020-06-23T12:41:01Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#ME1084A1\",\n      \"type\": \"EventWithWebinar\",\n      \"channel\": \"Webinar\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1085,\n      \"name\": \"23 June-2\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-23T12:41:58Z+0000\",\n      \"updatedAt\": \"2020-06-23T12:41:58Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#ME1085A1\",\n      \"type\": \"Event\",\n      \"channel\": \"Tradeshow\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1086,\n      \"name\": \"23 June-4\",\n      \"description\": \"\",\n      \"createdAt\": \"2020-06-23T12:45:18Z+0000\",\n      \"updatedAt\": \"2020-06-23T12:45:18Z+0000\",\n      \"type\": \"In-App Program\",\n      \"channel\": \"Mobile In-App\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 260,\n        \"folderName\": \"Program\"\n      },\n      \"status\": \"draft\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1120,\n      \"name\": \"27th feb\",\n      \"description\": \"\",\n      \"createdAt\": \"2021-02-27T06:42:30Z+0000\",\n      \"updatedAt\": \"2021-02-27T07:55:09Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1120A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Email Send\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 1127,\n        \"folderName\": \"pradeep learning\"\n      },\n      \"status\": \"completed\",\n      \"workspace\": \"Default\",\n      \"headStart\": false\n    },\n    {\n      \"id\": 1171,\n      \"name\": \"ABC COMPANY WEBBINAR\",\n      \"description\": \"\",\n      \"createdAt\": \"2023-08-14T03:28:32Z+0000\",\n      \"updatedAt\": \"2023-08-14T03:28:32Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#ME1171A1\",\n      \"type\": \"EventWithWebinar\",\n      \"channel\": \"Webinar\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 1531,\n        \"folderName\": \"Recruitment App\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1172,\n      \"name\": \"ABC COMPANY WEBINAR EMAILS\",\n      \"description\": \"\",\n      \"createdAt\": \"2023-08-14T03:29:01Z+0000\",\n      \"updatedAt\": \"2023-08-14T03:29:29Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1172A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Email Send\",\n      \"folder\": {\n        \"type\": \"Program\",\n        \"value\": 1171,\n        \"folderName\": \"ABC COMPANY WEBBINAR\"\n      },\n      \"status\": \"unlocked\",\n      \"workspace\": \"Learning\",\n      \"headStart\": false\n    },\n    {\n      \"id\": 1050,\n      \"name\": \"Adhoc Email Sending\",\n      \"description\": \"Adhoc Email Sending\",\n      \"createdAt\": \"2019-08-19T07:26:44Z+0000\",\n      \"updatedAt\": \"2020-06-26T11:30:05Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1050A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Email Send\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 140,\n        \"folderName\": \"Sunil Testing\"\n      },\n      \"status\": \"unlocked\",\n      \"workspace\": \"Default\",\n      \"headStart\": true\n    },\n    {\n      \"id\": 1034,\n      \"name\": \"Anith-AG\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-07-23T10:26:44Z+0000\",\n      \"updatedAt\": \"2019-07-24T06:32:22Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1034A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Email Send\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 116,\n        \"folderName\": \"Anith\"\n      },\n      \"status\": \"completed\",\n      \"workspace\": \"Default\",\n      \"headStart\": false\n    },\n    {\n      \"id\": 1041,\n      \"name\": \"Anith-AG1\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-07-24T08:09:01Z+0000\",\n      \"updatedAt\": \"2019-07-24T08:30:50Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1041A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Web Content\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 116,\n        \"folderName\": \"Anith\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Default\"\n    },\n    {\n      \"id\": 1193,\n      \"name\": \"App Promotion\",\n      \"description\": \"\",\n      \"createdAt\": \"2023-08-31T10:04:26Z+0000\",\n      \"updatedAt\": \"2023-10-09T05:53:49Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1193A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Nurture Email\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 1550,\n        \"folderName\": \"Arpit Dave\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Default\"\n    },\n    {\n      \"id\": 1223,\n      \"name\": \"Aryan Demo 1\",\n      \"description\": \"One time send Email\",\n      \"createdAt\": \"2026-04-25T03:58:03Z+0000\",\n      \"updatedAt\": \"2026-04-25T06:36:12Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#EBP1223A1\",\n      \"type\": \"Email\",\n      \"channel\": \"Email Send\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 1893,\n        \"folderName\": \"Aryan\"\n      },\n      \"status\": \"unlocked\",\n      \"workspace\": \"Default\",\n      \"headStart\": false\n    },\n    {\n      \"id\": 1158,\n      \"name\": \"Assignment1\",\n      \"description\": \"\",\n      \"createdAt\": \"2023-08-10T11:54:12Z+0000\",\n      \"updatedAt\": \"2023-08-11T07:20:36Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1158A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Operational\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 1434,\n        \"folderName\": \"Learning-01-Madhu\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    },\n    {\n      \"id\": 1159,\n      \"name\": \"Assignment2\",\n      \"description\": \"\",\n      \"createdAt\": \"2023-08-10T11:59:51Z+0000\",\n      \"updatedAt\": \"2023-08-10T11:59:51Z+0000\",\n      \"url\": \"https://app-sj29.marketo.com/#PG1159A1\",\n      \"type\": \"Default\",\n      \"channel\": \"Operational\",\n      \"folder\": {\n        \"type\": \"Folder\",\n        \"value\": 1434,\n        \"folderName\": \"Learning-01-Madhu\"\n      },\n      \"status\": \"\",\n      \"workspace\": \"Learning\"\n    }\n  ]\n}",
+          "code": 200,
+          "cookie": [],
+          "header": [
+            {
+              "key": "date",
+              "value": "Thu, 24 Sep 2026 12:13:42 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "server",
+              "value": "nginx"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/1.1 m_proxy_prod_aws_ap-south-2_1_1n, HTTP/1.1 s_proxy_prod_aws_ap-south-2_1_1n"
+            }
+          ],
+          "name": "Get Programs",
+          "originalRequest": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "717-ICG-368",
+                "mktorest",
+                "com"
+              ],
+              "path": [
+                "rest",
+                "asset",
+                "v1",
+                "programs.json"
+              ],
+              "protocol": "https",
+              "raw": "https://717-ICG-368.mktorest.com/rest/asset/v1/programs.json"
+            }
+          },
+          "status": "200"
+        }
+      ]
+    },
+    {
+      "name": "Get Smart Campaign",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "_postman_previewlanguage": "text",
+          "body": "",
+          "code": 200,
+          "cookie": [],
+          "header": null,
+          "name": "Post Smart Campaign",
+          "originalRequest": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "raw": ""
+            }
+          },
+          "status": "OK"
+        },
+        {
+          "_postman_previewlanguage": "json",
+          "body": "{\n  \"success\": true,\n  \"errors\": [],\n  \"requestId\": \"b0d9#1a0d7972c79\",\n  \"warnings\": [],\n  \"result\": [\n    {\n      \"id\": 1001,\n      \"name\": \"Process Bounced Emails\",\n      \"description\": \"System smart campaign for processing bounced email events\",\n      \"createdAt\": \"2019-05-13T17:46:50Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:46:50Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": false,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"once\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1001,\n      \"flowId\": 1001,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1001A1\"\n    },\n    {\n      \"id\": 1002,\n      \"name\": \"Process Unsubscribes\",\n      \"description\": \"System smart campaign for processing unsubscribe events\",\n      \"createdAt\": \"2019-05-13T17:46:50Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:46:50Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": false,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"once\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1002,\n      \"flowId\": 1002,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1002A1\"\n    },\n    {\n      \"id\": 1004,\n      \"name\": \"RCM Success Only (v1) Known --> Engaged\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1014,\n      \"flowId\": 1004,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1004A1\"\n    },\n    {\n      \"id\": 1005,\n      \"name\": \"RCM Success Only (v1) Engaged --> Person\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1015,\n      \"flowId\": 1005,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1005A1\"\n    },\n    {\n      \"id\": 1006,\n      \"name\": \"RCM Success Only (v1) Person --> Sales Person\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1016,\n      \"flowId\": 1006,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1006A1\"\n    },\n    {\n      \"id\": 1007,\n      \"name\": \"RCM Success Only (v1) Sales Person --> Opportunity\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1017,\n      \"flowId\": 1007,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1007A1\"\n    },\n    {\n      \"id\": 1008,\n      \"name\": \"RCM Success Only (v1) Opportunity --> Won\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:07Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1018,\n      \"flowId\": 1008,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1008A1\"\n    },\n    {\n      \"id\": 1009,\n      \"name\": \"RCM Success with Detours (v1) Known --> Engaged\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1019,\n      \"flowId\": 1009,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1009A1\"\n    },\n    {\n      \"id\": 1010,\n      \"name\": \"RCM Success with Detours (v1) Engaged --> Person\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1020,\n      \"flowId\": 1010,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1010A1\"\n    },\n    {\n      \"id\": 1011,\n      \"name\": \"RCM Success with Detours (v1) Person --> Sales Person\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1021,\n      \"flowId\": 1011,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1011A1\"\n    },\n    {\n      \"id\": 1012,\n      \"name\": \"RCM Success with Detours (v1) Sales Person --> Opportunity\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1022,\n      \"flowId\": 1012,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1012A1\"\n    },\n    {\n      \"id\": 1013,\n      \"name\": \"RCM Success with Detours (v1) Opportunity --> Won\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1023,\n      \"flowId\": 1013,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1013A1\"\n    },\n    {\n      \"id\": 1014,\n      \"name\": \"RCM Success with Detours (v1) Person --> Recycling\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1024,\n      \"flowId\": 1014,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1014A1\"\n    },\n    {\n      \"id\": 1015,\n      \"name\": \"RCM Success with Detours (v1) Recycling --> Engaged\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1025,\n      \"flowId\": 1015,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1015A1\"\n    },\n    {\n      \"id\": 1016,\n      \"name\": \"RCM Success with Detours (v1) Sales Person --> Disqualified\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1026,\n      \"flowId\": 1016,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1016A1\"\n    },\n    {\n      \"id\": 1017,\n      \"name\": \"RCM Success with Detours (v1) Opportunity --> Lost\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1027,\n      \"flowId\": 1017,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1017A1\"\n    },\n    {\n      \"id\": 1018,\n      \"name\": \"RCM Success with Detours (v1) Recycling --> Person\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1028,\n      \"flowId\": 1018,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1018A1\"\n    },\n    {\n      \"id\": 1019,\n      \"name\": \"RCM Success with Detours (v1) Sales Person --> Recycling\",\n      \"description\": \"\",\n      \"createdAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:08Z+0000\",\n      \"status\": \"Never Run\",\n      \"type\": \"batch\",\n      \"isSystem\": true,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"interval\",\n      \"qualificationRuleInterval\": \"1\",\n      \"qualificationRuleUnit\": \"day\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1029,\n      \"flowId\": 1019,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1019A1\"\n    },\n    {\n      \"id\": 1020,\n      \"name\": \"Opened Sales Email\",\n      \"description\": \" \",\n      \"createdAt\": \"2019-05-13T17:47:21Z+0000\",\n      \"updatedAt\": \"2019-05-13T17:47:21Z+0000\",\n      \"folder\": {\n        \"id\": 53,\n        \"type\": \"Folder\"\n      },\n      \"status\": \"Inactive\",\n      \"type\": \"trigger\",\n      \"isSystem\": false,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"any\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1030,\n      \"flowId\": 1020,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1020A1\"\n    },\n    {\n      \"id\": 1021,\n      \"name\": \"Clicks Link in Email\",\n      \"description\": \" \",\n      \"createdAt\": \"2019-05-13T17:47:21Z+0000\",\n      \"updatedAt\": \"2021-02-17T09:25:58Z+0000\",\n      \"folder\": {\n        \"id\": 53,\n        \"type\": \"Folder\"\n      },\n      \"status\": \"Inactive\",\n      \"type\": \"trigger\",\n      \"isSystem\": false,\n      \"isActive\": false,\n      \"isRequestable\": false,\n      \"isCommunicationLimitEnabled\": false,\n      \"recurrence\": {\n        \"weekdayOnly\": false\n      },\n      \"qualificationRuleType\": \"any\",\n      \"workspace\": \"Default\",\n      \"smartListId\": 1031,\n      \"flowId\": 1021,\n      \"computedUrl\": \"https://app-sj29.marketo.com/#SC1021A1\"\n    }\n  ]\n}",
+          "code": 200,
+          "cookie": [],
+          "header": [
+            {
+              "key": "date",
+              "value": "Fri, 25 Sep 2026 08:03:24 GMT"
+            },
+            {
+              "key": "content-type",
+              "value": "application/json;charset=UTF-8"
+            },
+            {
+              "key": "transfer-encoding",
+              "value": "chunked"
+            },
+            {
+              "key": "connection",
+              "value": "keep-alive"
+            },
+            {
+              "key": "server",
+              "value": "nginx"
+            },
+            {
+              "key": "via",
+              "value": "HTTP/1.1 e_proxy_prod_aws_ap-south-2_1_0n, HTTP/1.1 s_proxy_prod_aws_ap-south-2_1_0n"
+            }
+          ],
+          "name": "Get Smart Campaign",
+          "originalRequest": {
+            "body": {
+              "mode": "raw",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              },
+              "raw": "{\r\n  \"input\": [\r\n    {\r\n      \"id\": 5436\r\n    }\r\n  ]\r\n}"
+            },
+            "header": [],
+            "method": "GET",
+            "url": {
+              "host": [
+                "717-ICG-368",
+                "mktorest",
+                "com"
+              ],
+              "path": [
+                "rest",
+                "asset",
+                "v1",
+                "smartCampaigns.json"
+              ],
+              "port": "",
+              "protocol": "https",
+              "raw": "https://717-ICG-368.mktorest.com:/rest/asset/v1/smartCampaigns.json"
+            }
+          },
+          "status": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Post Smart Campaign",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": [
+        {
+          "_postman_previewlanguage": "text",
+          "body": "",
+          "code": 200,
+          "cookie": [],
+          "header": null,
+          "name": "Post Smart Campaign",
+          "originalRequest": {
+            "header": [],
+            "method": "GET",
+            "url": {
+              "raw": ""
+            }
+          },
+          "status": "OK"
+        }
+      ]
+    },
+    {
+      "name": "Describe Leads",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Leads to List",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Custom Activity",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Describe Custom Object",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "host": [
+            "717-ICG-368",
+            "mktorest",
+            "com"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "customobjects",
+            "ecommerce_c",
+            "describe.json"
+          ],
+          "protocol": "https",
+          "raw": "https://717-ICG-368.mktorest.com/rest/v1/customobjects/ecommerce_c/describe.json"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Log a Custom Activity",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Custom Object",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Custom Object Record",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Activity Types",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "host": [
+            "717-ICG-368",
+            "mktorest",
+            "com"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "activities",
+            "external",
+            "type",
+            "purchaseCompleted_c",
+            "describe.json"
+          ],
+          "protocol": "https",
+          "raw": "https://717-ICG-368.mktorest.com/rest/v1/activities/external/type/purchaseCompleted_c/describe.json"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Purchase Activity",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Custom Activities",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Describe Custom Activity",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post New Activity - Product Viewed",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post New Activity - Added to Cart",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post New Activity - Checkout Started",
+      "request": {
+        "header": [],
+        "method": "GET",
+        "url": {
+          "raw": ""
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Post New Activity - Purchase Completed",
+      "request": {
+        "body": {
+          "mode": "raw",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          },
+          "raw": "{\r\n    \"input\": [\r\n        {\r\n            \"activityTypeId\": 100019,\r\n            \"leadId\": 5436,\r\n            \r\n            \"activityDate\": \"2026-09-29T13:45:00Z\",\r\n            \"primaryAttributeValue\"\r\n        },\r\n\r\n    ]\r\n}"
+        },
+        "header": [],
+        "method": "POST",
+        "url": {
+          "host": [
+            "717-ICG-368",
+            "mktorest",
+            "com"
+          ],
+          "path": [
+            "rest",
+            "v1",
+            "activities",
+            "external.json"
+          ],
+          "protocol": "https",
+          "raw": "https://717-ICG-368.mktorest.com/rest/v1/activities/external.json"
+        }
+      },
+      "response": []
+    }
+  ]
+}
